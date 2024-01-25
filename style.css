@@ -1,0 +1,43 @@
+.bg-color {
+    background-color: #FAFAFA;
+}
+.font {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.small-text {
+    font-size: 15px;
+}
+.offcanvas-lg {
+    width: 70px !important;
+    z-index: 999 !important;
+}
+.offcanvas-lg::-webkit-scrollbar {
+  display: none;
+}
+.offcanvas-lg {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.main-content {
+    width: 100%;
+}
+.header {
+    position: fixed;
+    width: 100%;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .header {
+        width: 95%;
+    }
+    /* .offcanvas-lg {
+        margin-top: 4rem !important;
+    } */
+    .main-content {
+        width: calc(100% - 70px);
+        margin-left: 70px;
+    }
+}
