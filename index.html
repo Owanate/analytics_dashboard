@@ -11,7 +11,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -48,15 +48,21 @@
                         <img src="media/menu-link-5.svg" alt="">
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item  mb-4">
                     <a href="#" class="text-decoration-none">
                         <img src="media/menu-link-6.svg" alt="">
                     </a>
                 </li>
-                <div class="mt-4  rounded-pill  p-2">
-                    <img src="media/light-theme.svg" alt="" class="d-block mb-3">
-                    <img src="media/dark-theme.svg" alt="" class="d-block">
-                </div>
+                <li class="nav-item">
+                    <button class="btn py-0">
+                        <img src="media/light-theme.svg" alt="light-mode" class="d-block mb-3">
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn pt-0">
+                        <img src="media/dark-theme.svg" alt="dark-mode" class="d-block">
+                    </button>
+                </li>
             </ul>
             <ul class="navbar-nav  mt-5  pt-3">
                 <li class="nav-item mb-4">
@@ -89,17 +95,16 @@
                 </form>
                 <div class="d-none  d-lg-flex  me-3">
                     <img src="media/calendar.svg" alt="">
-                    <p class="ms-2  mb-0  fw-semibold">November 15, 2023</p>
+                    <p class="ms-2  mb-0  fw-medium">November 15, 2023</p>
                 </div>
-                <div class="border  border-secondary-subtle  border-1 rounded-circle  p-2  d-none  d-sm-flex  align-items-center">
-                    <img src="/media/bell-outline.svg" alt="">
-                </div>
+                <button class="btn  border  border-secondary-subtle  border-1 rounded-circle  p-2  d-none  d-sm-flex  align-items-center">
+                    <img src="/media/bell-outline.svg" alt="notifications">
+                </button>
                 <div class="nav-item  dropdown  mx-2">
                     <button class="nav-link  dropdown-toggle  d-flex  align-items-center border border-1 border-secondary-subtle rounded-pill px-2" data-bs-toggle="dropdown" aria-expanded="false">
                         <img class="rounded-circle  me-sm-2" src="media/user.jpg" alt="" style="width: 40px; height: 40px;">
-                        <span class="d-none  d-sm-inline-flex  text-white  fs-5  fw-semibold" id="username"></span>
                         <div class="text-center d-none d-md-block">
-                            <p class="fw-semibold  mb-0">Justin Bergson</p>
+                            <p class="fw-medium  mb-0">Justin Bergson</p>
                             <p class="small-text  text-secondary  mb-0">Justin@gmail.com</p>
                         </div>
                         <img src="media/stroke.svg" alt="" class="ms-2">
@@ -128,12 +133,12 @@
         <!-- Sales Trends -->
         <section class="container-fluid  pt-5  mt-5" id="main">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-7">
                     <div class="bg-white  rounded  p-2">
                         <div class="d-flex  align-items-center  justify-content-between  mb-4">
                             <h2 class="mb-0  h5  fw-semibold">Sales Trends</h2>
                             <div class="d-flex  flex-column  flex-sm-row  align-items-center">
-                                <p class="mb-0  fw-semibold  me-2">Short by:</p>
+                                <p class="mb-0  fw-medium  me-2">Short by:</p>
                                 <p class="mb-0  d-flex  align-items-center  border  border-1  border-secondary-subtle  rounded-pill  px-2  py-1">
                                     <span>Weekly</span>
                                     <img src="media/stroke.svg" alt="" class="ms-2">
@@ -143,9 +148,174 @@
                         <canvas id="sales-trends" aria-label="sales trends" role="img"></canvas>
                     </div>
                 </div>
-                <div class="col-lg-4"></div>
+                <div class="col-lg-5  mt-3  mt-lg-0  ps-lg-0">
+                    <div class="row  g-2">
+                        <div class="col-sm-6">
+                            <div class="bg-white  p-3  px-lg-0  rounded">
+                                <div class="d-flex  align-items-center  justify-content-between  mb-2  px-lg-2">
+                                    <img src="media/box-icon-1.svg" alt="">
+                                    <img src="media/box-graph-1.svg" alt="">
+                                </div>
+                                <h3 class="h5  text-secondary  fw-medium  mb-1 ps-lg-2">Total Order</h3>
+                                <p class="fs-2  fw-semibold  mb-lg-2 ps-lg-2">350</p>
+                                <div class="d-flex  align-items-center">
+                                    <p class="d-flex  align-items-center  green-pill  px-2  py-1  mb-0  me-2 mx-lg-2  rounded-pill">
+                                        <img src="media/trending-up.svg" alt="">
+                                        <span class="ms-1">23.5%</span>
+                                    </p>
+                                    <p class="mb-0  small-text">vs. previous month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="bg-white p-3  px-lg-0 rounded">
+                                <div class="d-flex  align-items-center  justify-content-between  mb-2  px-lg-2">
+                                    <img src="media/box-icon-2.svg" alt="">
+                                    <img src="media/box-graph-2.svg" alt="">
+                                </div>
+                                <h3 class="h5  text-secondary  fw-medium  mb-1  ps-lg-2">Total Refund</h3>
+                                <p class="fs-2  fw-semibold  mb-lg-2  ps-lg-2">270</p>
+                                <div class="d-flex  align-items-center">
+                                    <p class="d-flex  align-items-center  red-pill  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
+                                        <img src="media/trending-down.svg" alt="">
+                                        <span class="ms-1">23.5%</span>
+                                    </p>
+                                    <p class="mb-0  small-text">vs. previous month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="bg-white p-3  px-lg-0 rounded">
+                                <div class="d-flex  align-items-center  justify-content-between  mb-2  px-lg-2">
+                                    <img src="media/box-icon-3.svg" alt="">
+                                    <img src="media/box-graph-2.svg" alt="">
+                                </div>
+                                <h3 class="h5  text-secondary  fw-medium  mb-1  ps-lg-2">Average Sales</h3>
+                                <p class="fs-2  fw-semibold  mb-lg-2  ps-lg-2">1567</p>
+                                <div class="d-flex  align-items-center">
+                                    <p class="d-flex  align-items-center  red-pill  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
+                                        <img src="media/trending-down.svg" alt="">
+                                        <span class="ms-1">23.5%</span>
+                                    </p>
+                                    <p class="mb-0  small-text">vs. previous month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="bg-white p-3  px-lg-0 rounded">
+                                <div class="d-flex  align-items-center  justify-content-between  mb-2  px-lg-2">
+                                    <img src="media/box-icon-4.svg" alt="">
+                                    <img src="media/box-graph-1.svg" alt="">
+                                </div>
+                                <h3 class="h5  text-secondary  fw-medium  mb-1  ps-lg-2">Total Income</h3>
+                                <p class="fs-2  fw-semibold  mb-lg-2  ps-lg-2">$350,000</p>
+                                <div class="d-flex  align-items-center">
+                                    <p class="d-flex  align-items-center  green-pill  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
+                                        <img src="media/trending-up.svg" alt="">
+                                        <span class="ms-1">23.5%</span>
+                                    </p>
+                                    <p class="mb-0  small-text">vs. previous month</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row"></div>
+        </section>
+
+        <!--  -->
+        <section class="container-fluid  pt-4">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="bg-white  rounded  px-2  py-3">
+                        <div class="d-flex  align-items-center justify-content-between  mb-2  px-2">
+                            <h2 class="h5  mb-0  fw-semibold">Last Orders</h2>
+                            <a href="#" class="text-decoration-none  green-text  medium-text  fw-medium">See All</a>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-secondary  fw-medium">Name</th>
+                                        <th scope="col" class="text-secondary  fw-medium">Date</th>
+                                        <th scope="col" class="text-secondary  fw-medium">Amount</th>
+                                        <th scope="col" class="text-secondary  fw-medium">Status</th>
+                                        <th scope="col" class="text-secondary  fw-medium">Invoice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align-middle">
+                                        <td class="py-2  d-flex  flex-column  flex-sm-row  align-items-start align-items-sm-center">
+                                            <img src="media/table-user-1.svg" alt="">
+                                            <span class="ms-sm-2  align-middle  fw-medium">Marcus Bergson</span>
+                                        </td>
+                                        <td class="text-secondary">Nov 15, 2023</td>
+                                        <td class="fw-medium">$80,000</td>
+                                        <td><span class="green-text">Paid</span></td>
+                                        <td>
+                                            <img src="media/view.svg" alt="">
+                                            <span class="ms-sm-1  align-middle">View</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="py-2  d-flex  flex-column  flex-sm-row  align-items-start align-items-sm-center">
+                                            <img src="media/table-user-2.svg" alt="">
+                                            <span class="ms-sm-2  align-middle  fw-medium">Jaydon Vaccaro</span>
+                                        </td>
+                                        <td class="text-secondary">Nov 15, 2023</td>
+                                        <td class="fw-medium">$150,000</td>
+                                        <td><span class="red-text">Refund</span></td>
+                                        <td>
+                                            <img src="media/view.svg" alt="">
+                                            <span class="ms-sm-1  align-middle">View</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="py-2  d-flex  flex-column  flex-sm-row  align-items-start align-items-sm-center">
+                                            <img src="media/table-user-3.svg" alt="">
+                                            <span class="ms-sm-2  align-middle  fw-medium">Corey Schleifer</span>
+                                        </td>
+                                        <td class="text-secondary">Nov 14, 2023</td>
+                                        <td class="fw-medium">$87,000</td>
+                                        <td><span class="green-text">Paid</span></td>
+                                        <td>
+                                            <img src="media/view.svg" alt="">
+                                            <span class="ms-sm-1  align-middle">View</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="py-2  d-flex  flex-column  flex-sm-row  align-items-start align-items-sm-center">
+                                            <img src="media/table-user-4.svg" alt="">
+                                            <span class="ms-sm-2  align-middle  fw-medium">Cooper Press</span>
+                                        </td>
+                                        <td class="text-secondary">Nov 14, 2023</td>
+                                        <td class="fw-medium">$100,000</td>
+                                        <td><span class="red-text">Refund</span></td>
+                                        <td>
+                                            <img src="media/view.svg" alt="">
+                                            <span class="ms-sm-1  align-middle">View</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="py-2  d-flex  flex-column  flex-sm-row  align-items-start  align-items-sm-center">
+                                            <img src="media/table-user-5.svg" alt="">
+                                            <span class="ms-sm-2  align-middle  fw-medium">Philip Lubin</span>
+                                        </td>
+                                        <td class="text-secondary">Nov 13, 2023</td>
+                                        <td class="fw-medium">$78,000</td>
+                                        <td><span class="green-text">Paid</span></td>
+                                        <td>
+                                            <img src="media/view.svg" alt="">
+                                            <span class="ms-sm-1  align-middle">View</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
+            </div>
         </section>
     </main>
     <script src="index.js" type="module"></script>

@@ -28,14 +28,30 @@
 .dropdown-toggle::after {
     display: none;
 }
+.green-pill {
+    background-color: rgba(52, 202, 165, 0.2);
+    color: rgb(52, 202, 165);
+    font-size: 13px;
+}
+.red-pill {
+    background-color: rgba(237, 84, 78, 0.2);
+    color: rgb(237, 84, 78);
+    font-size: 13px;
+}
+.green-text {
+    color: rgb(52, 202, 165);
+}
+.red-text {
+    color: rgb(237, 84, 78);
+}
+.medium-text {
+    font-size: 18px;
+}
 
 @media (min-width: 800px) {
     .header {
         width: 95%;
     }
-    /* .offcanvas-lg {
-        margin-top: 4rem !important;
-    } */
     .main-content {
         width: calc(100% - 70px);
         margin-left: 70px;
