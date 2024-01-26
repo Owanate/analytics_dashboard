@@ -33,21 +33,9 @@ let salesChart = new Chart(ctx, {
           7000, 21000, 3000, 26000, 18000, 45000, 18000, 23000, 32000, 6000,
           30000, 26000,
         ],
-        backgroundColor: [
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          greenGradient,
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-          "rgba(52, 202, 165, 0.1)",
-        ],
+        backgroundColor: ["rgba(52, 202, 165, 0.1)"],
         borderRadius: 20,
+        hoverBackgroundColor: greenGradient,
       },
     ],
   },
@@ -56,6 +44,34 @@ let salesChart = new Chart(ctx, {
     plugins: {
       legend: {
         display: false,
+      },
+      tooltip: {
+        callbacks: {
+          title: () => "",
+          label: (context) => {
+            let label = context.dataset.label || "";
+            if (context.parsed.y !== null) {
+                label += new Intl.NumberFormat("en-US", {
+                    style: "currency",
+                    currency: "USD",
+                }).format(context.parsed.y);
+            }
+            return label;
+          },
+        },
+        bodyFont: {
+          family: "'Inter', 'sans-serif'",
+          size: 12,
+        },
+        displayColors: false,
+        padding: {
+            left: 10,
+            right: 10,
+            top: 8,
+            bottom: 8
+        },
+        yAlign: "bottom",
+        position: "nearest",
       },
     },
     scales: {
