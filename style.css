@@ -11,10 +11,10 @@
     width: 70px !important;
     z-index: 999 !important;
 }
-.offcanvas-lg::-webkit-scrollbar {
+.offcanvas-lg::-webkit-scrollbar, .height::-webkit-scrollbar {
   display: none;
 }
-.offcanvas-lg {
+.offcanvas-lg, .height {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -47,6 +47,18 @@
 .medium-text {
     font-size: 18px;
 }
+.bg-purple {
+    background-color: #6160DC;
+}
+.bg-lightblue {
+    background-color: #54C5EB;
+}
+.bg-orange {
+    background-color: #FFB74A;
+}
+.bg-red {
+    background-color: #FF4A55;
+}
 
 @media (min-width: 800px) {
     .header {
@@ -55,5 +67,8 @@
     .main-content {
         width: calc(100% - 70px);
         margin-left: 70px;
+    }
+    .height {
+        height: 24rem;
     }
 }

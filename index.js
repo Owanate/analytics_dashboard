@@ -1,3 +1,8 @@
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const now = new Date();
+let date = document.querySelector("#date");
+date.textContent = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`;
+
 let canvas = document.querySelector("#sales-trends");
 let ctx = canvas.getContext("2d");
 
@@ -78,19 +83,19 @@ let salesChart = new Chart(ctx, {
           display: false,
         },
         ticks: {
-            font: {
-                family: "'Plus Jakarta Sans', 'sans-serif'",
-                weight: 600,
-                size: 15,
-            },
-            align: "center",
-            callback: (value, index) => {
-              if (value === 5000) {
-                return (value = 5000);
-              } else if (value > 5000) {
-                return index % 2 === 0 ? value : "";
-              }
-            },
+          font: {
+            family: "'Plus Jakarta Sans', 'sans-serif'",
+            weight: 600,
+            size: 15,
+          },
+          align: "center",
+          callback: (value, index) => {
+            if (value === 5000) {
+              return (value = 5000);
+            } else if (value > 5000) {
+              return index % 2 === 0 ? value : "";
+            }
+          },
         },
       },
     },
