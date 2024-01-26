@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="d-flex  bg-color  font">
-    <header class="navbar  navbar-expand-lg  px-4  ps-lg-3  fixed-top  bg-color  border-bottom">
-        <div class="d-none d-sm-block" aria-label="Logo">
+    <header class="navbar  navbar-expand-lg  px-3  fixed-top  bg-color  border-bottom">
+        <div aria-label="Logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95427 0 -1.52588e-05 8.95431 -1.52588e-05 20C-1.52588e-05 31.0457 8.95427 40 20 40ZM26.2393 9.31684C26.543 8.23805 25.4961 7.60013 24.54 8.2813L11.1931 17.7896C10.1562 18.5283 10.3193 20 11.4381 20H14.9527V19.9728H21.8025L16.2212 21.9421L13.7607 30.6832C13.457 31.762 14.5038 32.3999 15.46 31.7187L28.8069 22.2105C29.8438 21.4718 29.6806 20 28.5619 20H23.2321L26.2393 9.31684Z" fill="#34CAA5" class="dark:fill-white"></path>
             </svg>
@@ -79,17 +79,15 @@
         <nav class="offcanvas-lg  offcanvas-start  vh-100  position-fixed  top-0  start-0  bg-color  overflow-y-scroll  z-n1  mt-5  pt-4" tabindex="-1" id="sidebar" data-bs-backdrop="false" aria-label="Navigation menu">
             <div class="offcanvas-body  d-flex  flex-column  align-items-center  p-0">
                 <ul class="navbar-nav  d-flex  flex-column  align-items-center  bg-white  w-100 pt-3">
-                    <li class="nav-item  mb-4  d-sm-none" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95427 0 -1.52588e-05 8.95431 -1.52588e-05 20C-1.52588e-05 31.0457 8.95427 40 20 40ZM26.2393 9.31684C26.543 8.23805 25.4961 7.60013 24.54 8.2813L11.1931 17.7896C10.1562 18.5283 10.3193 20 11.4381 20H14.9527V19.9728H21.8025L16.2212 21.9421L13.7607 30.6832C13.457 31.762 14.5038 32.3999 15.46 31.7187L28.8069 22.2105C29.8438 21.4718 29.6806 20 28.5619 20H23.2321L26.2393 9.31684Z" fill="#34CAA5" class="dark:fill-white"></path>
-                        </svg>
-                    </li>
-                    <li class="nav-item  mb-4">
+                    <li class="nav-item  mb-4  position-relative">
                         <a href="#" class="text-decoration-none" aria-label="Overview">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="" aria-hidden="true">
                                 <path d="M7.24 1.99997H5.34C3.15 1.99997 2 3.14997 2 5.32997V7.22997C2 9.40997 3.15 10.56 5.33 10.56H7.23C9.41 10.56 10.56 9.40997 10.56 7.22997V5.32997C10.57 3.14997 9.42 1.99997 7.24 1.99997Z" fill=""></path><path opacity="0.4" d="M18.67 1.99997H16.77C14.59 1.99997 13.44 3.14997 13.44 5.32997V7.22997C13.44 9.40997 14.59 10.56 16.77 10.56H18.67C20.85 10.56 22 9.40997 22 7.22997V5.32997C22 3.14997 20.85 1.99997 18.67 1.99997Z" fill=""></path><path d="M18.67 13.43H16.77C14.59 13.43 13.44 14.58 13.44 16.76V18.66C13.44 20.84 14.59 21.99 16.77 21.99H18.67C20.85 21.99 22 20.84 22 18.66V16.76C22 14.58 20.85 13.43 18.67 13.43Z" fill=""></path><path opacity="0.4" d="M7.24 13.43H5.34C3.15 13.43 2 14.58 2 16.76V18.66C2 20.85 3.15 22 5.33 22H7.23C9.41 22 10.56 20.85 10.56 18.67V16.77C10.57 14.58 9.42 13.43 7.24 13.43Z" fill=""></path>
                             </svg>
                         </a>
+                        <div class="position-absolute  top-0  clipart  d-none  d-md-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3" height="21" viewBox="0 0 3 21" fill="none" class="dark:fill-white" aria-hidden="true"><path d="M6.53467e-06 3.02506C7.11773e-06 1.42126 1.40951 0.182683 3 0.388858V21C1.34315 21 4.88293e-07 19.6568 1.09063e-06 18L6.53467e-06 3.02506Z" fill="#0D062D" class="dark:fill-white"></path></svg>
+                        </div>
                     </li>
                     <li class="nav-item  mb-4">
                         <a href="#" class="text-decoration-none  stroke" aria-label="Trends">
@@ -199,7 +197,7 @@
                                 <h3 class="h5  text-secondary  fw-medium  mb-1 ps-lg-2">Total Order</h3>
                                 <p class="fs-3  fw-semibold  mb-lg-2 ps-lg-2">350</p>
                                 <div class="d-flex  align-items-center">
-                                    <p class="d-flex  align-items-center  green-pill  px-2  py-1  mb-0  me-2 mx-lg-2  rounded-pill">
+                                    <p class="d-flex  align-items-center  green-pill  green-text  px-2  py-1  mb-0  me-2 mx-lg-2  rounded-pill">
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path d="M1.5 8.5L4.5 5.5L6.5 7.5L10.5 3.5" stroke="" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 3.5H10.5V7" stroke="" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
@@ -222,7 +220,7 @@
                                 <h3 class="h5  text-secondary  fw-medium  mb-1  ps-lg-2">Total Refund</h3>
                                 <p class="fs-3  fw-semibold  mb-lg-2  ps-lg-2">270</p>
                                 <div class="d-flex  align-items-center">
-                                    <p class="d-flex  align-items-center  red-pill  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
+                                    <p class="d-flex  align-items-center  red-pill  red-text  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path d="M1.5 8.5L4.5 5.5L6.5 7.5L10.5 3.5" stroke="" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 3.5H10.5V7" stroke="" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
@@ -245,7 +243,7 @@
                                 <h3 class="h5  text-secondary  fw-medium  mb-1  ps-lg-2">Average Sales</h3>
                                 <p class="fs-3  fw-semibold  mb-lg-2  ps-lg-2">1567</p>
                                 <div class="d-flex  align-items-center">
-                                    <p class="d-flex  align-items-center  red-pill  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
+                                    <p class="d-flex  align-items-center  red-pill  red-text  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path d="M1.5 8.5L4.5 5.5L6.5 7.5L10.5 3.5" stroke="" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 3.5H10.5V7" stroke="" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
@@ -268,7 +266,7 @@
                                 <h3 class="h5  text-secondary  fw-medium  mb-1  ps-lg-2">Total Income</h3>
                                 <p class="fs-3  fw-semibold  mb-lg-2  ps-lg-2">$350,000</p>
                                 <div class="d-flex  align-items-center">
-                                    <p class="d-flex  align-items-center  green-pill  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
+                                    <p class="d-flex  align-items-center  green-pill  green-text  px-2  py-1  mb-0  me-2  ms-lg-2 rounded-pill">
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path d="M1.5 8.5L4.5 5.5L6.5 7.5L10.5 3.5" stroke="" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 3.5H10.5V7" stroke="" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>

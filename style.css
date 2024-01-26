@@ -30,7 +30,7 @@
   scrollbar-width: none;
 }
 .stroke {
-    stroke: #B2ABAB;
+    stroke: rgb(178, 171, 171);
 }
 *:focus, *:focus-visible {
     outline: 3px solid rgb(52, 202, 165) !important;
@@ -44,13 +44,13 @@
 }
 .green-pill {
     background-color: rgba(52, 202, 165, 0.2);
-    color: rgb(52, 202, 165);
     font-size: 13px;
+    stroke: rgb(52, 202, 165);
 }
 .red-pill {
     background-color: rgba(237, 84, 78, 0.2);
-    color: rgb(237, 84, 78);
     font-size: 13px;
+    stroke: rgb(237, 84, 78);
 }
 .green-text {
     color: rgb(52, 202, 165);
@@ -62,21 +62,24 @@
     font-size: 18px;
 }
 .bg-purple {
-    background-color: #6160DC;
+    background-color: rgb(97, 96, 220);
 }
 .bg-lightblue {
-    background-color: #54C5EB;
+    background-color: rgb(84, 197, 235);
 }
 .bg-orange {
-    background-color: #FFB74A;
+    background-color: rgb(255, 183, 74);
 }
 .bg-red {
-    background-color: #FF4A55;
+    background-color: rgb(255, 74, 85);
 }
 
 @media (min-width: 768px) {
+    .clipart {
+        left: 2.7rem;
+    }
     .dropdown-toggle {
-        border: 1px solid #B2ABAB;
+        border: 1px solid rgb(178, 171, 171);
     }
 }
 
