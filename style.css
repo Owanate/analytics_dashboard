@@ -7,6 +7,17 @@
 .small-text {
     font-size: 15px;
 }
+.skip-link {
+  font-weight: 700;
+  left: 40%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-500%);
+  transition: transform 0.3s;
+}
+.skip-link:focus {
+  transform: translateY(0%);
+}
 .offcanvas-lg {
     width: 70px !important;
     z-index: 999 !important;
@@ -18,11 +29,14 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.main-content {
-    width: 100%;
+.stroke {
+    stroke: #B2ABAB;
 }
-.header {
-    position: fixed;
+*:focus, *:focus-visible {
+    outline: 3px solid rgb(52, 202, 165) !important;
+    border-radius: 5px !important;
+}
+.main-content {
     width: 100%;
 }
 .dropdown-toggle::after {
@@ -60,9 +74,15 @@
     background-color: #FF4A55;
 }
 
+@media (min-width: 768px) {
+    .dropdown-toggle {
+        border: 1px solid #B2ABAB;
+    }
+}
+
 @media (min-width: 800px) {
-    .header {
-        width: 95%;
+    .skip-link {
+        left: 25%;
     }
     .main-content {
         width: calc(100% - 70px);
