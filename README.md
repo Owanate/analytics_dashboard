@@ -13,6 +13,7 @@ Welcome to the Geegpay Analytics Dashboard project! This repository contains the
 - HTML5
 - CSS3 - [CSS Guidelines](https://cssguidelin.es/)
 - BootStrap 5 - [Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Chartjs - A JavaScript library for data visualization
 
 ## Responsive Design
 The Geegpay Analytics Dashboard is designed to be responsive, ensuring a seamless experience across different devices. The layout adjusts dynamically to fit various screen sizes, from desktops to tablets and smartphones.
