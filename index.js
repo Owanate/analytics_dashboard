@@ -2,6 +2,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const now = new Date();
 let date = document.querySelector("#date");
 date.textContent = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`;
+document.querySelector("#now").textContent = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`;
 
 let canvas = document.querySelector("#sales-trends");
 let ctx = canvas.getContext("2d");
