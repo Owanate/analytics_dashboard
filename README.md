@@ -20,6 +20,8 @@ The Geegpay Analytics Dashboard is designed to be responsive, ensuring a seamles
 
 ![](./media/geegpay-1.PNG)
 ![](./media/geegpay-2.PNG)
+![](./media/mobile-view.jpeg)
+![](./media/tablet-view.jpeg)
 
 ## Installation
 To set up the Geegpay Analytics Dashboard on your local machine, follow these simple steps:
