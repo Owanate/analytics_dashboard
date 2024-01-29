@@ -18,7 +18,8 @@ Welcome to the Geegpay Analytics Dashboard project! This repository contains the
 ## Responsive Design
 The Geegpay Analytics Dashboard is designed to be responsive, ensuring a seamless experience across different devices. The layout adjusts dynamically to fit various screen sizes, from desktops to tablets and smartphones.
 
-[Include screenshots or examples of the dashboard on different devices.]
+![](./media/geegpay-1.PNG)
+![](./media/geegpay-2.PNG)
 
 ## Installation
 To set up the Geegpay Analytics Dashboard on your local machine, follow these simple steps:
